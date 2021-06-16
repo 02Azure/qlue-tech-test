@@ -1,0 +1,19 @@
+**DISCLAIMER**
+Berhubung laptop yang digunakan hanya punya OS windows, jadi jawaban no 1 saya tidak bisa di tes langsung ( di cmd tidak ada command pgrep ataupun httpd ) ( murni dari google)
+dan jawaban no 2 kemungkinan tidak bisa dijalankan di OS unix ( command ren tidak ada )
+
+1) Create a single line script that returns the number of httpd processes that are running on the current
+machine
+
+# pgrep -c httpd
+
+
+2) Open a terminal and type:
+# cd /tmp
+# mkdir -p mig33/inner.folder
+# touch mig33/inner.folder/{1,2,3,4,5}.txt
+From the current folder (/tmp), provide some bash commands that will rename all the *.txt files in
+mig33/inner_folder/ to *.dat
+
+# cd mig33/inner.folder/
+# ren *.txt *.dat
